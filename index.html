@@ -13,7 +13,7 @@
       display: flex;
       background: #E9F8FF;
       border-radius: 10rem;
-      width: 200px;
+      width: 250px;
       padding: 0.8rem;
       justify-content: space-between;
       align-items: center;
@@ -42,18 +42,6 @@
       text-align: center;
     }
 
-    .column {
-    float: left;
-    }
-
-    .left {
-    width: 5%;
-    }
-
-    .right {
-    width: 95%;
-    }
-
     .img{
     display: flex;
     justify-content: center;
@@ -65,36 +53,24 @@
 </head>
   
 <body>
-<!--  <div class="row">
-    <div class="column left img"> <img width="50px" src="water (1).png"> </div>
-    <div class="column right">
-        <div class="center container">
-        <div class="button col col-1">
-            <button id="minus-btn"> <img width="32px" src="circle-minus-solid.svg"> </button>
-        </div>
-        <div class="number col col-2">
-            <h1 id="count">0</h1>
-        </div>
-        <div class="button col col-1">
-            <button id="plus-btn"> <img width="32px" src="circle-plus-solid.svg"> </button>
-        </div>
-        </div>
-    </div>
-</div>
- -->
   
   <div class="container">
-            <img width="40px" style="padding-right:12px" src="water (1).png">
+        <img width="60px" style="padding-right:12px" src="Counter/water (1).png">
+
         <div class="button col col-1">
-            <button id="minus-btn"> <img width="32px" src="circle-minus-solid.svg"> </button>
+            <button id="minus-btn"> <img width="32px" src="Counter/circle-minus-solid.svg"> </button>
         </div>
         <div class="number col col-2">
             <h1 id="count">0</h1>
         </div>
         <div class="button col col-1">
-            <button id="plus-btn"> <img width="32px" src="circle-plus-solid.svg"> </button>
+            <button id="plus-btn"> <img width="32px" src="Counter/circle-plus-solid.svg"> </button>
         </div>
-   </div>
+    
+        <div class="button col" style="padding-left:15px">
+        <button id="reset" onclick="javascript:reset()"> <img width="32px" src="Counter/reset.svg"> </button>
+        </div>
+    </div>
   
    <script>
     let minusBtn = document.getElementById("minus-btn");
@@ -113,6 +89,11 @@
       countNum += 1;
       count.innerHTML = countNum;
     });
+     
+    var reset= function(){
+    a = 0;  
+    document.getElementById('count').innerHTML = a;
+    }
     </script>
   </body>
 </html>
