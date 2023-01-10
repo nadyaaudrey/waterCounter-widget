@@ -4,38 +4,20 @@
   
 <head>
   <style>
-    /* @import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300); */
-    .frame {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: 400px;
-      height: 400px;
-      margin-top: -200px;
-      margin-left: -200px;
-      border-radius: 2px;
-      box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
-      overflow: hidden;
-      background: #fff;
-      color: #333;
-      font-family: 'Open Sans', Helvetica, sans-serif;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-    }
 
     .center {
       position: absolute;
-      top: 50%;
+      /* top: 50%;
       left: 50%;
-      transform: translate(-50%,-50%);
+      transform: translate(-50%,-50%); */
     }
 
     .container {
       display: flex;
-      border: 2px solid #1B4965;
+      /* border: 2px solid #1B4965; */
       background: #cae9ff;
       border-radius: 10rem;
-      width: 40%;
+      width: 20%;
       padding: 0.8rem;
       justify-content: space-between;
       align-items: center;
@@ -64,35 +46,40 @@
       text-align: center;
     }
 
-    /* .button {
-      font-family: sans-serif;
-      font-size: 2em;
-    } */
+    .column {
+    float: left;
+    }
 
-    /* button {
-      color: #FF370C;
-      user-select: none;
-      outline: none;
-    } */
+    .left {
+    width: 5%;
+    }
+
+    .right {
+    width: 95%;
+    }
+
   </style>
   
  
 </head>
   
 <body>
-
-    <div class="center container">
-      <div class="button col col-1">
-        <button id="minus-btn"> <img width="32px" src="circle-minus-solid.svg"> </button>
-      </div>
-      <div class="number col col-2">
-        <h1 id="count">0</h1>
-      </div>
-      <div class="button col col-1">
-        <button id="plus-btn"> <img width="32px" src="circle-plus-solid.svg"> </button>
-      </div>
+ <div class="row">
+    <div class="column left"> <img width="70%" src="water (1).png"> </div>
+    <div class="column right">
+        <div class="center container">
+        <div class="button col col-1">
+            <button id="minus-btn"> <img width="32px" src="circle-minus-solid.svg"> </button>
+        </div>
+        <div class="number col col-2">
+            <h1 id="count">0</h1>
+        </div>
+        <div class="button col col-1">
+            <button id="plus-btn"> <img width="32px" src="circle-plus-solid.svg"> </button>
+        </div>
+        </div>
     </div>
-  
+</div>
 
    <script>
     let minusBtn = document.getElementById("minus-btn");
