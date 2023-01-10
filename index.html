@@ -75,7 +75,25 @@
     }
   </style>
   
-  <script>
+ 
+</head>
+  
+<body>
+<div class="frame">
+  <div class="center container">
+    <div class="button col col-1">
+      <button id="minus-btn">-</button>
+    </div>
+    <div class="number col col-2">
+      <h1 id="count">0</h1>
+    </div>
+    <div class="button col col-1">
+      <button id="plus-btn">+</button>
+    </div>
+  </div>
+</div>
+  
+ <script>
   let minusBtn = document.getElementById("minus-btn");
   let count = document.getElementById("count");
   let plusBtn = document.getElementById("plus-btn");
@@ -93,21 +111,5 @@
     count.innerHTML = countNum;
   });
   </script>
-</head>
-  
-<body>
-<div class="frame">
-  <div class="center container">
-    <div class="button col col-1">
-      <button id="minus-btn">-</button>
-    </div>
-    <div class="number col col-2">
-      <h1 id="count">0</h1>
-    </div>
-    <div class="button col col-1">
-      <button id="plus-btn">+</button>
-    </div>
-  </div>
-</div>
   </body>
 </html>
