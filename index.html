@@ -65,7 +65,7 @@
 </head>
   
 <body>
- <div class="row">
+<!--  <div class="row">
     <div class="column left img"> <img width="60px" src="water (1).png"> </div>
     <div class="column right">
         <div class="center container">
@@ -81,7 +81,21 @@
         </div>
     </div>
 </div>
-
+ -->
+  
+  <div class="container">
+            <img width="60px" style="padding-right:12px" src="Counter/water (1).png">
+        <div class="button col col-1">
+            <button id="minus-btn"> <img width="32px" src="Counter/circle-minus-solid.svg"> </button>
+        </div>
+        <div class="number col col-2">
+            <h1 id="count">0</h1>
+        </div>
+        <div class="button col col-1">
+            <button id="plus-btn"> <img width="32px" src="Counter/circle-plus-solid.svg"> </button>
+        </div>
+   </div>
+  
    <script>
     let minusBtn = document.getElementById("minus-btn");
     let count = document.getElementById("count");
