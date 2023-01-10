@@ -1,10 +1,100 @@
 <!DOCTYPE html>
 
 <html>
+  
 <head>
-  <link rel=”stylesheet” href=”style.css”>
-  <script type=”text/javascript” src=”counter.js”></script>
+  <style>
+    @import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+    .frame {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 400px;
+      height: 400px;
+      margin-top: -200px;
+      margin-left: -200px;
+      border-radius: 2px;
+      box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+      overflow: hidden;
+      background: #fff;
+      color: #333;
+      font-family: 'Open Sans', Helvetica, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    .center {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+    }
+
+    .container {
+      display: flex;
+      border: 4px solid #404040;
+      background: #FFDC00;
+      border-radius: 10rem;
+      width: 60%;
+      padding: 1rem;
+      justify-content: space-between;
+      align-items: center;
+      align-content: center;
+    }
+
+    h1 {
+      margin: 0;
+      padding: 0;
+      user-select: none;
+    }
+
+    .col-1 {
+      width: 45%;
+    }
+
+    .col-2 {
+      width: 25%;
+    }
+
+    .col > button, .number {
+      width: 100%;
+      background: #FFDC00;
+      border: 0px;
+      text-align: center;
+    }
+
+    .button {
+      font-family: sans-serif;
+      font-size: 2em;
+    }
+
+    button {
+      color: #FF370C;
+      user-select: none;
+      outline: none;
+    }
+  </style>
+  
+  <script>
+  let minusBtn = document.getElementById("minus-btn");
+  let count = document.getElementById("count");
+  let plusBtn = document.getElementById("plus-btn");
+
+  let countNum = 0;
+  count.innerHTML = countNum;
+
+  minusBtn.addEventListener("click", () => {
+    countNum -= 1;
+    count.innerHTML = countNum;
+  });
+
+  plusBtn.addEventListener("click", () => {
+    countNum += 1;
+    count.innerHTML = countNum;
+  });
+  </script>
 </head>
+  
 <body>
 <div class="frame">
   <div class="center container">
