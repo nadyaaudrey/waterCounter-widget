@@ -82,13 +82,11 @@
     minusBtn.addEventListener("click", () => {
       countNum -= 1;
       count.innerHTML = countNum;
-      localStorage.setItem('count', countNum);
     });
 
     plusBtn.addEventListener("click", () => {
       countNum += 1;
       count.innerHTML = countNum;
-      localStorage.setItem('count', countNum);
     });
      
     var reset= function(){
