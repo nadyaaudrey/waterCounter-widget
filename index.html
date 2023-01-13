@@ -77,7 +77,6 @@
     let plusBtn = document.getElementById("plus-btn");
 
     let countNum = 0;
-    localStorage.lastCount = countNum;
     count.innerHTML = countNum;
 
     minusBtn.addEventListener("click", () => {
@@ -92,7 +91,6 @@
      
     var reset= function(){
     countNum = 0;  
-    localStorage.clear();
     document.getElementById('count').innerHTML = countNum;
     }
     </script>
